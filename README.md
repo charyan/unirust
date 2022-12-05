@@ -1,99 +1,78 @@
-# rouille
+# Unirust
 
-![](https://github.com/bnjbvr/rouille/raw/principale/logo.jpeg)
+![](https://github.com/charyan/unirust/raw/principale/logo.jpeg)
 
-Aren't you _le tired_ from writing Rust programs in English? Do you like saying
-"merde" a lot? Would you like to try something different, in an exotic and
-funny-sounding language? Would you want to bring some French touch to your
+Aren't you _tired_ from writing Rust programs in only one language? Do you like saying
+"panikuok", "lort" or "くだらない" a lot? Would you like to try something different, in an exotic and
+funny-sounding language? Would you want to bring some diversity to your
 programs?
 
-**rouille** (French for _Rust_) is here to save your day, as it allows you to
-write Rust programs in French, using French keywords, French function names,
-French idioms.
+**Unirust** is here to save your day, as it allows you to
+write Rust programs in any language, using keywords from any language, function names in any language,
+ idioms in any language (Supported languages below).
 
-This has been designed to be used as the official programming language to
-develop the future French sovereign operating system. 
-
-If you're from the French or any other governement with French as an official 
-language: I will be awaiting your donations on
-[liberapay](https://liberapay.com/bnjbvr/).
-
-You're from Quebec (or elsewhere) and don't feel at ease using only French words? 
+This has been designed to be used as the official programming language to develop the future global social credit system.
 
 Don't worry!
-French Rust is fully compatible with English-Rust, so you can mix both at your
+Unirust is fully compatible with English-Rust, so you can mix both at your
 convenience.
 
-Here's an example of what can be achieved with Rouille:
+Here's an example of what can be achieved with Unirust:
 
-### trait and impl (aka convention et réalisation)
+### trait and impl
 
 ```rust
-rouille::rouille! {
-    utilisons std::collections::Dictionnaire comme Dico;
+unirust::unirust! {
+    外部 टोकरा unirust;
 
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine);
-        fonction lire(&soi, clé: Chaine) -> PeutÊtre<&Chaine>;
+    استخدم std::collections::사전 zoals Dico;
+
+    eigenschaft CléValeur {
+        függvény écrire(&soi, clé: 문자열, valeur: Lanka);
+        функція lire(&soi, clé: Zsinór) -> 結果<Möglichkeit<&Ĉeno>, Cxeno>;
     }
 
-    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
+    statisk μεταβλητος DICTIONNAIRE: Opcja<Dico<Styga, Naskah>> = Geen;
 
-    structure Concrète;
+    типок Concrète;
 
-    réalisation CléValeur pour Concrète {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
+    kivitelezés CléValeur minden Concrète {
+        funkcio écrire(&soi, clé: สตริง, valeur: Συμβολοσειρα) {
+            द्या dico = 安全じゃない {
+                DICTIONNAIRE.خذ_او_ادخل_ب(Predefinito::каквсегда)
             };
-            dico.insérer(clé, valeur);
+            dico.ekle(clé, valeur);
         }
-        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine> {
-            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
-                Bien(dico.lire(&clé))
-            } sinon {
-                Arf("fetchez le dico".vers())
+        пацикисделают lire(&soi, clé: Catena) -> निकाल<Malnepra<&Retaz>, Низ> {
+            nếu द्या มี(dico) = असुरक्षित { DICTIONNAIRE.sebagai_referensi() } {
+                よし(dico.lire(&clé))
+            } không_thì {
+                실패("fetchez le dico".ke_dalam())
             }
         }
     }
 }
 ```
 
-### Support for regional languages
-
-```rust
-#[légal(code_inaccessible)]
-fonction secondaire() {
-    merde!("oh non"); // for the true French experience
-    calisse!("tabarnak"); // for friends speaking fr-ca
-    oups!("fetchez la vache"); // in SFW contexts
-}
-```
-
 ### Other examples
 
 See the [examples](./examples/src/main.rs) to get a rough sense of the whole
-syntax. Voilà, that's it.
+syntax. That's it.
 
 ## les contributions
 
 First of all, _merci beaucoup_ for considering participating to this joke, the
-French government will thank you later! Feel free to throw in a few identifiers
-here and there, and open a pull-request against the `principale` (French for
-`main`) branch.
+World government will thank you later! Feel free to throw in a few identifiers
+here and there, and open a pull-request against the `1` branch (`1` because math is universal).
 
-Please don't introduce swear words, though: we will not excuse your French.
 
-## but why would you do zat
+## but why would you use unirust
 
 - horsin around
 - playing with raw proc macros
-- making a bit of fun about programming languages that do this seriously,
-  though I can see their utility.
-- winking at [Marcel](https://github.com/brouberol/marcel)
-- c'est chic
+- allowing collaboration between multiple developpers speaking different languages on the same codebase
 
-## Other languages
+## Supported languages
 
 - Dutch: [roest](https://github.com/jeroenhd/roest)
 - German: [rost](https://github.com/michidk/rost)
@@ -128,12 +107,7 @@ Please don't introduce swear words, though: we will not excuse your French.
 - Swedish: [rost](https://github.com/vojd/rost/)
 - Croatian: [hrđa](https://github.com/njelich/hrdja)
 
-## un grand merci
 
-- [@VentGrey](https://twitter.com/VentGrey) for making a logo!
+## The license
 
-## la license
-
-[License Publique Rien à Branler](http://sam.zoy.org/lprab/),
-_le_ official translation of the [WTFPL](http://www.wtfpl.net/)
-by the same author.
+[WTFPL](http://www.wtfpl.net/)

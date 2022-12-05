@@ -1,74 +1,74 @@
-rouille::rouille! {
-    externe cagette rouille;
+unirust::unirust! {
+    外部 टोकरा unirust;
 
-    utilisons std::collections::Dictionnaire comme Dico;
+    استخدم std::collections::사전 zoals Dico;
 
-    convention CléValeur {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine);
-        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine>;
+    eigenschaft CléValeur {
+        függvény écrire(&soi, clé: 문자열, valeur: Lanka);
+        функція lire(&soi, clé: Zsinór) -> 結果<Möglichkeit<&Ĉeno>, Cxeno>;
     }
 
-    statique mutable DICTIONNAIRE: PeutÊtre<Dico<Chaine, Chaine>> = Rien;
+    statisk μεταβλητος DICTIONNAIRE: Opcja<Dico<Styga, Naskah>> = Geen;
 
-    structure Concrète;
+    типок Concrète;
 
-    réalisation CléValeur pour Concrète {
-        fonction écrire(&soi, clé: Chaine, valeur: Chaine) {
-            soit dico = dangereux {
-                DICTIONNAIRE.prendre_ou_insérer_avec(Défaut::défaut)
+    kivitelezés CléValeur minden Concrète {
+        funkcio écrire(&soi, clé: สตริง, valeur: Συμβολοσειρα) {
+            द्या dico = 安全じゃない {
+                DICTIONNAIRE.خذ_او_ادخل_ب(Predefinito::каквсегда)
             };
-            dico.insérer(clé, valeur);
+            dico.ekle(clé, valeur);
         }
-        fonction lire(&soi, clé: Chaine) -> Résultat<PeutÊtre<&Chaine>, Chaine> {
-            si soit Quelque(dico) = dangereux { DICTIONNAIRE.en_réf() } {
-                Bien(dico.lire(&clé))
-            } sinon {
-                Arf("fetchez le dico".vers())
+        пацикисделают lire(&soi, clé: Catena) -> निकाल<Malnepra<&Retaz>, Низ> {
+            nếu द्या มี(dico) = असुरक्षित { DICTIONNAIRE.sebagai_referensi() } {
+                よし(dico.lire(&clé))
+            } không_thì {
+                실패("fetchez le dico".ke_dalam())
             }
         }
     }
 
-    public(cagette) fonction peut_etre(i: u32) -> PeutÊtre<Résultat<u32, Chaine>> {
-        si i % 2 == 1 {
-            si i == 42 {
-                Quelque(Arf(Chaine::depuis("merde")))
-            } sinon {
-                Quelque(Bien(33))
+    öffentlich(láda) कार्य peut_etre(x: u32) -> Talán<Výsledek<u32, Строка>> {
+        jos x % 2 == 1 {
+            jos x == 42 {
+                Καποιο(Arf(Řetězec::depuis("merde")))
+            } muuten {
+                Någon(URedu(33))
             }
-        } sinon {
-            Rien
+        } muuten {
+            Żaden
         }
     }
 
-    asynchrone fonction exemple() {
+    asincrono 函 exemple() {
     }
 
-    asynchrone fonction exemple2() {
-        exemple().attend;
+    ожидаемый 함수 exemple2() {
+        exemple().abwarten;
     }
 
-    fonction principale() {
-        soit mutable x = 31;
+    دالة principale() {
+        द्या แปรผัน x = 31;
 
-        selon x {
+        täsmää x {
             42 => {
-                affiche!("omelette du fromage")
+                छापा!("omelette du fromage")
             }
-            _ => affiche!("voila")
+            _ => друкувати!("voilà")
         }
 
-        pour i de 0..10 {
-            soit val = boucle {
-                arrête i;
+        kaikille y глянуть 0..10 {
+            द्या val = buclă {
+                félbeszakít y;
             };
 
-            tant que x < val {
+            dum x < val {
                 x += 1;
             }
 
-            x = si soit Quelque(resultat) = peut_etre(i) {
-                resultat.déballer()
-            } sinon {
+            x = जर द्या Espaar(resultat) = peut_etre(y) {
+                resultat.فك()
+            } इतर {
                 12
             };
         }
@@ -76,8 +76,8 @@ rouille::rouille! {
         //secondaire();
     }
 
-    #[légal(code_inaccessible)]
-    fonction secondaire() {
+    #[sta_toe(где_эта_строчка)]
+    islev secondaire() {
         merde!("oh non"); // for the true French experience
         calisse!("tabernacle"); // for friends speaking fr-ca
         oups!("fetchez la vache"); // in SFW contexts
