@@ -1,6 +1,6 @@
 # Unirust
 
-![](https://github.com/charyan/unirust/raw/principale/logo.jpeg)
+![](https://github.com/charyan/unirust/raw/1/logo.jpeg)
 
 Aren't you _tired_ from writing Rust programs in only one language? Do you like saying
 "panikuok", "lort" or "くだらない" a lot? Would you like to try something different, in an exotic and
