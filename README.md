@@ -106,7 +106,8 @@ here and there, and open a pull-request against the `1` branch (`1` because math
 - Swiss: [roeschti](https://github.com/Georg-code/roeschti)
 - Swedish: [rost](https://github.com/vojd/rost/)
 - Croatian: [hrđa](https://github.com/njelich/hrdja)
-
+- Persian: [zangar (زنگار)](https://github.com/ui-ce/zangar)
+- Malagasy: [arafesina](https://github.com/luckasRanarison/arafesina)
 
 ## The license
 
