@@ -9,7 +9,7 @@ programs?
 
 **Unirust** is here to save your day, as it allows you to
 write Rust programs in any language, using keywords from any language, function names in any language,
- idioms in any language (Supported languages below).
+idioms in any language (Supported languages below).
 
 This has been designed to be used as the official programming language to develop the future global social credit system.
 
@@ -65,7 +65,6 @@ First of all, _merci beaucoup_ for considering participating to this joke, the
 World government will thank you later! Feel free to throw in a few identifiers
 here and there, and open a pull-request against the `1` branch (`1` because math is universal).
 
-
 ## but why would you use unirust
 
 - horsin around
@@ -108,6 +107,9 @@ here and there, and open a pull-request against the `1` branch (`1` because math
 - Croatian: [hrđa](https://github.com/njelich/hrdja)
 - Persian: [zangar (زنگار)](https://github.com/ui-ce/zangar)
 - Malagasy: [arafesina](https://github.com/luckasRanarison/arafesina)
+- Latin: [ferrugo](https://github.com/pianoman911/ferrugo)
+- Norwegian: [korrosjon](https://github.com/datagutt/korrosjon)
+- Estonian: [rooste](https://github.com/hanshs/rooste)
 
 ## The license
 
